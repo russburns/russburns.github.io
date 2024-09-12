@@ -1,14 +1,11 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - russburns
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - russburns/Solar_System_EOM
+  - russburns/Paris_Cannon_Model
+  - russburns/Fermilab_Neutrino_Statistics
+  - russburns/Zach_Thesis
+  - russburns/Kaleidomnene
