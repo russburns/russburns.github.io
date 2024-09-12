@@ -29,14 +29,6 @@ A Julia implementation of [Successive Convexification for 6-DoF Mars Rocket Powe
 </div>
 {% endif %}
 
-{% if site.data.repositories.github_repos %}
-
-## GitHub Repositories 2
-
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-      {% include repository/site.data.repositories.github_repos/russburns/Solar_System_EOM.liquid repository=site.data.repositories.github_repos/russburns/Solar_System_EOM %}
-</div>
-{% endif %}
 
 {% if site.data.repositories.github_repos %}
 
