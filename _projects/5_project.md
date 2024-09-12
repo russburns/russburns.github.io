@@ -18,14 +18,23 @@ A Julia implementation of [Successive Convexification for 6-DoF Mars Rocket Powe
 
 {% if site.data.repositories.github_repos %}
 
-## GitHub Repositories
+## GitHub Repositories 1
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   {% for repo in site.data.repositories.github_repos %}
-    {% if repo.name == "Solar_System_EOM" %}
+    {% if repo.name == "russburns/Solar_System_EOM" %}
       {% include repository/repo.liquid repository=repo %}
     {% endif %}
   {% endfor %}
+</div>
+{% endif %}
+
+{% if site.data.repositories.github_repos %}
+
+## GitHub Repositories 2
+
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+      {% include repository/site.data.repositories.github_repos/russburns/Solar_System_EOM.liquid repository=site.data.repositories.github_repos/russburns/Solar_System_EOM %}
 </div>
 {% endif %}
 
