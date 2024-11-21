@@ -2,7 +2,7 @@
 layout: page
 title: Artillery Sim
 description: Paris gun performance analysis via RK4 on a Rayleigh distribution + FCTS heat scheme
-img: assets/img/ParisGun.jpg
+img: assets/img/ParisGun.png
 importance: 4
 category: Undergraduate
 ---
@@ -14,7 +14,7 @@ The paris gun was a large weapon used during WW1 that was used for long range bo
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   {% for repo in site.data.repositories.github_repos %}
-    {% if repo == "russburns/Paris_Cannon_Mode" %}
+    {% if repo == "russburns/Paris_Cannon_Model" %}
       {% include repository/repo.liquid repository=repo %}
     {% endif %}
   {% endfor %}
