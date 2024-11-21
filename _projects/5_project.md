@@ -1,24 +1,18 @@
 ---
 layout: page
 title: Solar System EOM
-description: Group project
+description: Code to plot solar system celestial body trajectories
 img: assets/img/SolarEOM.jpg
 importance: 3
 category: Undergraduate
 ---
-{% for repo in site.data.repositories.github_repos %}
-  {% if repo.name == "Solar_System_EOM" %}
-    {% include repository/repo.liquid repository=repo %}
-  {% endif %}
-{% endfor %}
+Project that solves the 3D equations of motion for the solar system via 2nd order ODES and plots their orbits. It's useful for predictive analysis of different parts of the system. Initial conditions were pulled for 2022-Nov-03, 00:00:00.0000 UTC from the HORIZONS web app.
 
+{% include figure.html path="assets/img/earthmars.png" title="example image" class="img-fluid rounded z-depth-1" %}
 
+## GitHub Repository
 
-A Julia implementation of [Successive Convexification for 6-DoF Mars Rocket Powered Landing with Free-Final-Time](https://arxiv.org/pdf/1802.03827.pdf) by Miki Szmuk and Behçet Açikmeşe. The animation on the left is a planar trajectory and the animation on the right is a recreation of SpaceX's Starship flip maneuver. My code for this project can be found [here](https://github.com/govindchari/PTR). Some notes I wrote on PTR can be found [here](/assets/pdf/PTR%20Walkthrough.pdf)
-
-{% if site.data.repositories.github_repos %}
-
-## GitHub Repositories 1
+{% if site.data.repositories.github_users %}
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   {% for repo in site.data.repositories.github_repos %}
@@ -28,15 +22,5 @@ A Julia implementation of [Successive Convexification for 6-DoF Mars Rocket Powe
   {% endfor %}
 </div>
 {% endif %}
+s
 
-
-{% if site.data.repositories.github_repos %}
-
-## GitHub Repositories
-
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% for repo in site.data.repositories.github_repos %}
-    {% include repository/repo.liquid repository=repo %}
-  {% endfor %}
-</div>
-{% endif %}

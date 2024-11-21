@@ -1,9 +1,22 @@
 ---
 layout: page
 title: OTKB Code
-description: Developed code to initialize, read from, and plot data 
+description: Enabled operation of optical tweezers 
 img: assets/img/OpticalTweezers.jpg
 importance: 4
 category: Undergraduate
 ---
-A Julia implementation of [Successive Convexification for 6-DoF Mars Rocket Powered Landing with Free-Final-Time](https://arxiv.org/pdf/1802.03827.pdf) by Miki Szmuk and Behçet Açikmeşe. The animation on the left is a planar trajectory and the animation on the right is a recreation of SpaceX's Starship flip maneuver. My code for this project can be found [here](https://github.com/govindchari/PTR). Some notes I wrote on PTR can be found [here](/assets/pdf/PTR%20Walkthrough.pdf)
+I assisted with code development for Zachary Lutzky's (W&M '24) senior thesis. My 400 lines allowed him to interface with and characterize a [Thorlabs OTKB/M](https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_ID=3959), which is now William & Mary's only operational set of Optical Tweezers.
+
+## GitHub Repository
+
+{% if site.data.repositories.github_users %}
+
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  {% for repo in site.data.repositories.github_repos %}
+    {% if repo == "russburns/Zach_Thesis" %}
+      {% include repository/repo.liquid repository=repo %}
+    {% endif %}
+  {% endfor %}
+</div>
+{% endif %}
