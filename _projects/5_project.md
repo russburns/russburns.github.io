@@ -22,3 +22,4 @@ Project that solves the 3D equations of motion for the solar system via 2nd orde
   {% endfor %}
 </div>
 {% endif %}
+
